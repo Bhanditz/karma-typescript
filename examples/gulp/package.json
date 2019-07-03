@@ -8,7 +8,9 @@
   "scripts": {
     "dev:foo": "gulp karma:foo",
     "dev:bar": "gulp karma:bar",
-    "dev:full": "gulp karma:full"
+    "dev:full": "gulp karma:full",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "karma": "1.5.0",
@@ -23,6 +25,8 @@
     "tsd": "0.5.6",
     "gulp-tsd": "0.1.1",
     "jasmine-core": "2.5.2",
-    "phantomjs-prebuilt": "2.1.13"
-  }
+    "phantomjs-prebuilt": "2.1.13",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
