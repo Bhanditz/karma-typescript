@@ -14,7 +14,9 @@
     "dev": "gulp dev --cwd . && karma start",
     "dev:ci": "gulp dev:ci --cwd . && karma start --port 20004 --single-run",
     "dev:ci:phantomjs": "gulp dev:ci --cwd . && karma start --browsers PhantomJS --single-run",
-    "test": "karma start"
+    "test": "karma start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@types/angular": "^1.5.20",
@@ -27,10 +29,12 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.0.2",
     "karma-typescript": "../../",
-    "typescript": "latest"
+    "typescript": "latest",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "karma-phantomjs-launcher": "^1.0.2"
-  }
+  },
+  "snyk": true
 }
