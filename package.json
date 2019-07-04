@@ -49,7 +49,9 @@
     "test": "./ci/run.sh",
     "test:unix": "./ci/install.sh && ./ci/run.sh",
     "test:windows": ".\\ci\\install.bat & .\\ci\\run.bat",
-    "test:unit": "tape dist/**/*.spec.js | faucet"
+    "test:unit": "tape dist/**/*.spec.js | faucet",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "acorn": "^4.0.4",
@@ -96,7 +98,8 @@
     "tty-browserify": "~0.0.0",
     "url": "~0.11.0",
     "util": "~0.10.1",
-    "vm-browserify": "~0.0.1"
+    "vm-browserify": "~0.0.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@types/acorn": "^4.0.0",
@@ -128,5 +131,6 @@
     "tslint": "^4.4.2",
     "tslint-eslint-rules": "^3.3.0",
     "typescript": "latest"
-  }
+  },
+  "snyk": true
 }
