@@ -24,7 +24,9 @@
     "dev:ci:phantomjs:no-module": "gulp dev:ci --cwd . && karma start karma.conf.no.module.js --browsers PhantomJS --single-run",
     "dev:ci:react": "gulp dev:ci --cwd . && karma start karma.conf.react.js --single-run",
     "dev:ci:phantomjs:react": "gulp dev:ci --cwd . && karma start karma.conf.react.js --browsers PhantomJS --single-run",
-    "test": "karma start"
+    "test": "karma start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@angular/common": "^2.4.5",
@@ -86,10 +88,12 @@
     "socket.io": "^1.7.2",
     "text-encoding": "0.6.1",
     "typescript": "latest",
-    "zone.js": "^0.7.6"
+    "zone.js": "^0.7.6",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "karma-phantomjs-launcher": "^1.0.2"
-  }
+  },
+  "snyk": true
 }
