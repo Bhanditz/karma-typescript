@@ -1,0 +1,25 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - tsd > update-notifier > request > hawk:
+        patched: '2022-06-30T10:55:17.303Z'
+  'npm:http-signature:20150122':
+    - tsd > update-notifier > request > http-signature:
+        patched: '2022-06-30T10:55:17.303Z'
+  'npm:mime:20170907':
+    - tsd > update-notifier > request > mime:
+        patched: '2022-06-30T10:55:17.303Z'
+    - tsd > update-notifier > request > form-data > mime:
+        patched: '2022-06-30T10:55:17.303Z'
+  'npm:qs:20140806-1':
+    - tsd > update-notifier > request > qs:
+        patched: '2022-06-30T10:55:17.303Z'
+  'npm:request:20160119':
+    - tsd > update-notifier > request:
+        patched: '2022-06-30T10:55:17.303Z'
+  'npm:semver:20150403':
+    - tsd > update-notifier > semver:
+        patched: '2022-06-30T10:55:17.303Z'
