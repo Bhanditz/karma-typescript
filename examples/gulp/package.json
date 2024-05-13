@@ -11,13 +11,13 @@
     "dev:full": "gulp karma:full"
   },
   "dependencies": {
-    "karma": "1.5.0",
+    "karma": "4.2.0",
     "karma-jasmine": "^1.0.2",
     "karma-nyan-reporter": "0.2.4",
     "karma-typescript": "../../",
     "karma-phantomjs-launcher": "1.0.2",
     "run-sequence": "1.2.2",
-    "gulp": "3.9.1",
+    "gulp": "4.0.0",
     "lodash": "4.0.0",
     "typescript": "latest",
     "tsd": "0.5.6",
