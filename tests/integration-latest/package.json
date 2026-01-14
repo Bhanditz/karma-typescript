@@ -28,8 +28,8 @@
   },
   "dependencies": {
     "@angular/common": "^2.4.5",
-    "@angular/compiler": "^2.4.5",
-    "@angular/core": "^2.4.5",
+    "@angular/compiler": "^19.2.18",
+    "@angular/core": "^19.2.18",
     "@angular/platform-browser": "^2.4.5",
     "@angular/platform-browser-dynamic": "^2.4.5",
     "@angular/upgrade": "^2.4.5",
